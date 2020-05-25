@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Stephen Pino Web Page</title>
+<meta charset="UTF-8">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="~/css/index.css">
+      <link rel="stylesheet" href="animate.min.css">
+  </head>
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img  style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-home w3-xlarge w3-hover-text-blue"></i>
+      <p>Me</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fas fa-user-tie w3-xlarge w3-hover-text-blue"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#activity" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xlarge w3-hover-text-blue"></i>
+      <p>ACTIVITY</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xlarge w3-hover-text-blue"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button w3" style="width:25% !important">Me</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#activity" class="w3-bar-item w3-button" style="width:25% !important">ACTIVITY</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-24 w3-center w3-black" id="home">
+    <h2 class="glow" class="w3-jumbo" >Stephen Pino</h2>
+    <p>Web Developer</p>
+    <img src="~/img/me.jpg" alt="grumpy pants" class="w3-image w3-card-4" width="292" height="508">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2 class="w3-text-light-grey w3-hover-text-blue">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am fueled by my passion for learning and gaining competency in web development. I consider myself a ‘life long learner,’ eager to both build on my learning and skills, whilst at the same time stay in tune with the latest technologies through continued professional development.</p>
+    <p>I am currently working as a Software Development Learning Mentor & have a passion for front end development work and creative HTML5.
+    </p>
+    <p>I have a focus on HTML5 development for the web and mobile and getting hands on in practical work that I am passionate about. I also work across front and back end. 
+    </p>   
+  <h3 class="w3-padding-16 w3-text-light-grey w3-hover-text-blue" id="myskills">My Versatility</h3>
+  <hr style="width:200px" class="w3-opacity">
+  <div class="w3-container w3-medium">
+    <div class="w3-left-align">
+      <ol>
+        <li>I am a highly motivated individual for technology and learning.</li>
+        <li>I have good attention to detail.</li>
+        <li>I am efficient to adapt to new technologies.</li>
+        <li>I work well either remote or both self-managed & in team environments.</li>
+        <li>I practice JavaScript and CSS Programming along with HTML5.</li>
+        <li>I have experience with C# Programming along with .Net</li>
+      </ol>    
+    </div>    
+  </div> 
+  
+  <p id="pleaseClick"><h6>Please click a Microsoft Badge: </h6></p>  
+  <!-- Modal for Microsoft certification badges and links -->
+  <div class="w3-container">
+    <button onclick="openModal1()" class="w3-button w3-black w3-hover-black"><img src="~/img/mta.png" placeholder="MTA-Software" alt="MTAswdf" class="w3-image" width="92" height="308"></button>
+    <button onclick="openModal2()" class="w3-button w3-black w3-hover-black"><img src="~/img/programming.png" placeholder="MTA-Software" alt="HTML5Exam" class="w3-image" width="92" height="308"></button>    
+  </div>
+  
+    <div id="idModal" class="w3-modal">
+      <div class="w3-modal-content"> 
+        <div class="w3-container">          
+          <span onclick="closeModal1()" class="w3-button w3-display-topright">&times;</span>
+          <p> <a href="https://www.youracclaim.com/badges/9d0eb2e0-ae1b-44e7-ad2a-bbf6645846d1/public_url" target="_blank">Please verify my passed exam here (click Verify).</a></p> 
+          <p> <a href="https://www.microsoft.com/en-us/learning/exam-98-361.aspx" target="_blank">Please see the exam here.</a></p>          
+        </div>
+      </div>
+    </div>
+    <div id="idModal2" class="w3-modal">
+      <div class="w3-modal-content"> 
+        <div class="w3-container">          
+          <span onclick="closeModal2()" class="w3-button w3-display-topright">&times;</span>
+          <p>Microsoft Exam 70-480 Certification - Programming in HTML5 with JavaScript and CSS3 and I will take this exam in June 2020.</p>
+          <p><a href="https://www.microsoft.com/en-us/learning/exam-70-480.aspx" target="_blank" > Please see the exam here.</a>
+          </p>          
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End of Section of Modal for Microsoft certification badges and links -->
+ 
+  <!-- Portfolio Section -->
+  <div class="w3-padding-8 w3-content" id="activity">
+    <h2 class="w3-text-light-grey w3-hover-text-blue">My Activity & Tinkering</h2>
+    <hr style="width:200px" class="w3-opacity">    
+      <div class="w3-left-align w3-text-grey">
+        <ol>
+          <li>Practicing responsive web/mobile design using CSS Grid and Flexbox. </li>         
+          <li>HTML5 DOM Manipulation using JavaScript.</li>   
+          <li>HTML5 Api's.</li>
+          <li>Getting to know Node.js and Express Framework.</li>
+          <li>W3.CSS Framework.</li>
+          <li>Familiar with .Net Framework.</li>
+          <li>Currently undertaking these tasks (amongst others) in my personal time and some are taken from the Microsoft Exam 70-480.</li>               
+        </ol>    
+      </div>  
+  </div>
+  <!-- End Portfolio Section -->
+  <!-- Contact Section -->  
+      <main>
+      @RenderBody()
+      </main>  
+
+  <!-- End Contact Section -->
+  
+  <!-- Scrolable interactive button -->  
+  <div class="w3-container" position="relative">  
+    <button class="w3-btn w3-black" onclick="toTopFunction()" id="toTopBtn" title="Go to top w3-button-right">Top</button>  
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge">
+    <a href="https://github.com/RoadHog31" target="_blank"><button class="fab fa-github w3-border w3-border-black w3-black w3-hover-text-blue"></button> </a>   
+    <a href="https://www.linkedin.com/in/spdesigndevelop" target="_blank"><button class="fab fa-linkedin-in w3-border w3-border-right w3-border-black w3-hover-text-green w3-black"></button></a>
+    <br/>
+    <p class="w3-tiny w3-padding-small">This site was created by Stephen Pino using HTML5, Asp.Net Razor Pages, C#, CSS and a sprinkling of JavaScript and Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css and Github Pages</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->  
+
+  
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/6976518f8b.js" crossorigin="anonymous"></script>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--Load the script last-->
+  <script src="~/js/index.js"></script>
+  <script src="~/js/badgesModal.js"></script>
+  <script src="~/js/sendEmail.js"></script>
+  <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+  @* the required indicates whether or not the view using the layout page must have a scripts section *@
+      @RenderSection("Scripts", required: false)
+  <!--An example of fault tolerance or graceful degradation.-->
+  <noscript>You will need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
+
+        
+    
+
+  
+
+  
+

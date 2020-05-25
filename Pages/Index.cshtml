@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Home page";
+}
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="contactForm">
+
+    <form method="post" class="w3-container w3-Black w3-text-blue w3-margin" >
+
+        <h2 class="w3-left">Contact Me</h2>
+        
+        <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-medium fa fa-user"></i></div>
+            <div class="w3-threequarter" >
+            <input class="w3-input w3-border w3-round"  name="ContactForm.FirstName" type="text" placeholder="First Name">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-medium fa fa-user"></i></div>
+            <div class="w3-threequarter">
+            <input class="w3-input w3-border w3-round" name="ContactForm.LastName" type="text" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-medium fa fa-envelope-o"></i></div>
+            <div class="w3-threequarter">
+            <input class="w3-input w3-border w3-round" name="ContactForm.EmailAddress" type="text" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-medium fa fa-phone"></i></div>
+            <div class="w3-threequarter">
+            <input class="w3-input w3-border w3-round" name="ContactForm.Mobile" type="text" placeholder="Phone">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-medium fa fa-pencil"></i></div>
+            <div class="w3-threequarter">
+            <textarea class="w3-input w3-border w3-round" name="ContactForm.FormMessage" type="text" placeholder="Message"></textarea>
+            </div>
+        </div>
+
+        <button class="w3-button w3-section w3-medium w3-round w3-blue w3-ripple w3-padding">Send</button>
+
+    </form>
+</div>
+
+
+
+@section scripts {
+
+    <script src="~/js/index.js"></script>
+}
+
