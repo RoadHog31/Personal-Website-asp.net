@@ -1,17 +1,10 @@
-﻿#Project: Personal-Website-asp.net.
+﻿Personal Website v2
+ 
+ #Project: Personal-Website-asp.net.
  
                 HTML, CSS & JS        
-                
                 Razor Syntax
-                C#
-                LINQ
-                SQL
-                Entity Framework Core
-                Identity Framework
-                Dependency Injection, SoC, MvvM Pattern.
-
-
-
+                C#          
                
 
 Change Log Version 2.0
